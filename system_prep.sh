@@ -1,7 +1,8 @@
 #!/bin/bash
 
+
 # Remove entries in /etc/systemctl/network-scripts/ifcfg-eth0
-echo "onboot=yes\ndevice=eth0" > /etc/systemctl/network-scripts/ifcfg-eth0
+echo "onboot=yes\ndevice=eth0" > /etc/sysconfig/network-scripts/ifcfg-eth0
 
 #Remove contents from /etc/machine-id
 chmod 777 /etc/machine-id
